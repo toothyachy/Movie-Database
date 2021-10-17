@@ -1,0 +1,15 @@
+.container-fluid {
+  width: 90%;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+.form-select {
+  width: 80%;
+}

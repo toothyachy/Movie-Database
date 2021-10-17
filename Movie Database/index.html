@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Movies Recommender</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">'
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid mx-auto">
+
+    <h1>Movie Recommendations</h1>
+
+    <div class="row">
+      <div class="border col-lg-6">
+        <form>FIND MOVIES BASED ON WHAT YOU LIKE
+          <input type="text" id="userInput" class="form-control" name="userMovie" placeholder="Movie title" required autofocus>
+          <button class="btn btn-dark searchSubmit" type="button">Submit</button>
+        </form>
+      </div>
+
+      <div class="border col-lg-6">
+        <form>OR SELECT GENRES TO GENERATE MOVIES
+          <br>
+          <select class="form-select border" multiple aria-label="multiple select genres" name="genresSelected">
+            <option selected>Select genres</option>
+            <option value="28">Action</option>
+            <option value="12">Adventure</option>
+            <option value="16">Animation</option>
+            <option value="35">Comedy</option>
+            <option value="80">Crime</option>
+            <option value="99">Documentary</option>
+            <option value="18">Drama</option>
+            <option value="10751">Family</option>
+            <option value="14">Fantasy</option>
+            <option value="36">History</option>
+            <option value="27">Horror</option>
+            <option value="10402">Music</option>
+            <option value="9648">Mystery</option>
+            <option value="10749">Romance</option>
+            <option value="878">Science Fiction</option>
+            <option value="10770">TV Movie</option>
+            <option value="53">Thriller</option>
+            <option value="10752">War</option>
+            <option value="37">Western</option>
+
+          </select>
+          <br>
+          <button class = "btn btn-dark genreSubmit" type="button">Submit</button>
+        </form>
+
+      </div>
+    </div>
+    <br>
+    <h2>Pick one of the below movies to see what other movies you might like</h2>
+    <div class="row">
+      <div class="border col-lg-3 col-md-6 mx-auto">
+        <button class="btn btn-dark selectMovie" type="button" name="movieSelected">1</button>
+        <h2 id="title0"></h2>
+        <h6 id="releaseDate0"></h6>
+        <h6 id="vote0"></h6>
+        <img id="poster0" class="img-fluid" src="" alt="">
+        <h6 id="description0"></h6>
+      </div>
+      <div class="border col-lg-3 col-md-6">
+        <button class="btn btn-dark selectMovie" type="button" name="movieSelected">2</button>
+        <h2 id="title1"></h2>
+        <h6 id="releaseDate1"></h6>
+        <h6 id="vote1"></h6>
+        <img id="poster1" class="img-fluid" src="" alt="">
+        <h6 id="description1"></h6>
+      </div>
+      <div class="border col-lg-3 col-md-6">
+        <button class="btn btn-dark selectMovie" type="button" name="movieSelected">3</button>
+        <h2 id="title2"></h2>
+        <h6 id="releaseDate2"></h6>
+        <h6 id="vote2"></h6>
+        <img id="poster2" class="img-fluid" src="" alt="">
+        <h6 id="description2"></h6>
+      </div>
+      <div class="border col-lg-3 col-md-6">
+        <button class="btn btn-dark selectMovie" type="button" name="movieSelected">4</button>
+        <h2 id="title3"></h2>
+        <h6 id="releaseDate3"></h6>
+        <h6 id="vote3"></h6>
+        <img id="poster3" class="img-fluid" src="" alt="">
+        <h6 id="description3"></h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="border col-lg-3 col-md-6 mx-auto">
+        <button class="btn btn-dark selectMovie" type="button" name="movieSelected">5</button>
+        <h2 id="title4"></h2>
+        <h6 id="releaseDate4"></h6>
+        <h6 id="vote4"></h6>
+        <img id="poster4" class="img-fluid" src="" alt="">
+        <h6 id="description4"></h6>
+      </div>
+      <div class="border col-lg-3 col-md-6">
+        <button class="btn btn-dark selectMovie" type="button" name="movieSelected">6</button>
+        <h2 id="title5"></h2>
+        <h6 id="releaseDate5"></h6>
+        <h6 id="vote5"></h6>
+        <img id="poster5" class="img-fluid" src="" alt="">
+        <h6 id="description5"></h6>
+      </div>
+      <div class="border col-lg-3 col-md-6">
+        <button class="btn btn-dark selectMovie" type="button" name="movieSelected">7</button>
+        <h2 id="title6"></h2>
+        <h6 id="releaseDate6"></h6>
+        <h6 id="vote6"></h6>
+        <img id="poster6" class="img-fluid" src="" alt="">
+        <h6 id="description6"></h6>
+      </div>
+      <div class="border col-lg-3 col-md-6">
+        <button class="btn btn-dark selectMovie" type="button" name="movieSelected">8</button>
+        <h2 id="title7"></h2>
+        <h6 id="releaseDate7"></h6>
+        <h6 id="vote7"></h6>
+        <img id="poster7" class="img-fluid" src="" alt="">
+        <h6 id="description7"></h6>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+
+
+
+</body>
+
+</html>
